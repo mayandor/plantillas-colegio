@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* fuente */
+        
+        .fuente {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* estilos navbar */
+        
+        .promo {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .formato-botton {
+            background: #d30e0e;
+        }
+        
+        .mostrar {
+            display: none;
+        }
+        
+        #mostrar:hover .mostrar {
+            display: flex;
+        }
+        /* estilos adversiting */
+        
+        .fondo {
+            background: #294CAD !important;
+        }
+        
+        .promoadver {
+            width: 80px;
+            height: 60px;
+        }
+        /* estilos carousel */
+        
+        .filtro-azul {
+            opacity: 0.75;
+            filter: alpha(opacity=50);
+            filter: hue-rotate(5deg);
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            /* right: 15%; */
+            top: 5px;
+            /* Cambiar bottom por top y los píxeles que necesites */
+            /* left: 15%; */
+            /* z-index: 10; */
+            padding-left: 0px;
+            /* padding-top: 20px;
+            padding-bottom: 20px; */
+            color: #ffffff;
+            margin-left: 0px;
+            text-align: left;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            /* Añadir para conseguir el fondo con opacidad */
+        }
+        /* ESTILOS DE CIRCULARES */
+        
+        .text-color {
+            color: #294CAD;
+        }
+        /* ESTILOS TABLAS */
+        
+        table {
+            border: 5px solid #7ff7db;
+        }
+        
+        .table-encabezado {
+            background-color: #7ff7db;
+        }
+        
+        .formato-boton {
+            background: #294CAD !important;
+            border: #294CAD;
+        }
+        
+        .font-text-table {
+            font-size: 10px;
+            text-align: right;
+            background-color: #E1E7E7;
+            padding: 0rem;
+        }
+        
+        td {
+            border-left: 1px solid;
+        }
+        
+        .td-border {
+            border-bottom: 1px solid;
+        }
+        
+        .tr-alto {
+            height: 50px;
+        }
+        /* ESTILOS FOOTER */
+        
+        .fondo-footer {
+            background-color: #B9BDBD;
+        }
+        
+        .fuente-footer {
+            font-size: 9px;
+        }
+        
+        .font-footer {
+            font-size: 13px;
+        }
+        
+        .text-under {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- adversiting -->
+        <div class="row justify-content-between fondo">
+            <div class="ml-4 p-2">
+                <img src="https://panorama.solutions/sites/default/files/styles/medium_retina/public/logo_instituto_ecologia_unam.png?itok=I1LqTwv1" class="promoadver">
+                <img src="https://images.vexels.com/media/users/3/142737/isolated/preview/ef4dfdefae3b40cba7088ad0d8c981f5-logo-de-inmobiliaria-de-tri--ngulos-coloreados-by-vexels.png" class="promoadver">
+                <img src="https://static.wixstatic.com/media/e23d6c_9f61c726b0994fd1a811cd25403d0b9c~mv2.png/v1/fit/w_2500,h_1330,al_c/e23d6c_9f61c726b0994fd1a811cd25403d0b9c~mv2.png" class="promoadver">
+                <img src="https://pbs.twimg.com/profile_images/1122997860872671233/LLivNA84_400x400.png" class="promoadver">
+                <img src="https://s3-us-west-2.amazonaws.com/scorestream-team-profile-pictures/287798/20181011001336_554_mascot300.png" class="promoadver">
+                <img src="https://i.dlpng.com/static/png/5130181-logos-liga-de-futbol-profesional-la-liga-png-1201_1201_preview.png" class="promoadver">
+            </div>
+            <div class="mt-3">
+                <a href="#" class="text-white"><i class="fab fa-instagram fa-2x mr-3"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x mr-3"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-facebook-square fa-2x mr-3"></i></a>
+                <a href="#" class="text-white"><i class="fas fa-globe fa-2x mr-3"></i></a>
+
+            </div>
+        </div>
+
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="row">
+                <div class="formato-botton">
+                    <a class="text-white mr-4">
+                        <img src="https://pbs.twimg.com/profile_images/2261139415/Calcomania_finalUEcurvas50M_400x400.png" class="d-inline-block ml-4 p-1 promo navbar-brand"> SYSTEM COLLAGE
+                    </a>
+                </div>
+                <ul class="navbar-nav ml-5 mr-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="texto-boton-navbar font-weight-bold">HOME</span><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Nuestro Colegio</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Kinder Garden</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Primaria</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Secundaria</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Vida Escolar</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Guia de Padres</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Calendario</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <section id="mostrar">
+                        <a href="#" class="mr-5">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <input type="search" class="mostrar">
+                    </section>
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><span>Iniciar Sesion</span></button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-none d-md-block  d-inline carousel-caption">
+                    <i class="fa fa-calendar mr-2"></i>15 de noviembre
+                    <i class="fa fa-map-marker ml-4 mr-2"></i>Ubicacion
+                </div>
+                <img class="d-block w-100 filtro-azul" src="imagenes\1.jpg" alt="First slide" height="400 px">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- DESCRIPCION -->
+    <div class="container-fluid">
+        <div class="row p-5">
+            <div class="col-7">
+                <h2 class="fuente">
+                    Bienvenidos a la pagina web del Colegio Aleman Santa Cruz, Bolivia
+                </h2>
+                <p class="fuente">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde hic labore eos? Eligendi, excepturi eaque dolor incidunt voluptatem hic sit laudantium ad. Repudiandae amet necessitatibus nisi dignissimos voluptatem asperiores repellat.
+                </p>
+                <p class="fuente"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quasi adipisci asperiores. Maxime dolorum.</p>
+                <p class="font-weight-bold fuente">Ing. Berger <br> Directora
+                </p>
+            </div>
+            <div class="col-5 p-3">
+                <img src="imagenes/2.jpg" width="400px" height="300px">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img src="imagenes/flecha.png" class="w-100">
+            </div>
+        </div>
+        <div class="row p-5">
+            <div class="col-3 ml-5">
+                <img src="imagenes/3.jpg" width="250px" height="300px" alt="">
+            </div>
+            <div class="col-8">
+                <h5 class="fuente ml-4">Circulares</h5>
+                <p class="fuente ml-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, tempora atque maxime animi laboriosam, tenetur aspernatur beatae excepturi placeat.</p>
+                <p class="text-color fuente">
+                    <i class="fas fa-calendar mr-2"></i>15/12 Programacion inscripciones 2020<br>
+                    <i class="fa fa-calendar mr-2"></i>17/12 Bachilleres 2019<br>
+                    <i class="fa fa-calendar mr-2"></i>12/12 Cierre de biblioteca por vacaciones colectivas<br>
+                    <i class="fa fa-calendar mr-2"></i>19/12 Horarios de atencion y vacaciones colectivas<br>
+                    <i class="fa fa-calendar mr-2"></i>21/01 ENCUESTA<br>
+                    <i class="fa fa-calendar mr-2"></i>18/01 Fin de semestre<br>
+                    <i class="fa fa-calendar mr-2"></i>14/01 Finalizacion año escolar 2019<br>
+                    <i class="fa fa-calendar mr-2"></i>22/01 Comunicado
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col formato-botton">
+                <h2 class="text-white text-center p-3">ACTIVIDADES</h2>
+            </div>
+        </div>
+        <div class="row  p-5 ml-5 mr-5">
+            <div class="col">
+                <table class="table text-color">
+                    <thead>
+                        <tr>
+                            <th colspan="7">
+                                <span class="ml-3">CALENDARIO ALUMNOS Y PADRES DE FAMILIA </span><br>
+                                <div class="row justify-content-between">
+                                    <div class="col-4">
+                                        <button class="btn formato-boton ml-3"><span class="p-0 text-white">hoy</span></button>
+                                        <a href="#"><i class="fas fa-angle-left ml-3 mr-3"></i></a>
+                                        <a href="#"><i class="fas fa-angle-right"></i></a>
+                                        <span class="text-danger ml-5">Diciembre 2019</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="text-danger text-left">
+                                            <a href="#" class="text-danger mr-3"><i class="fas fa-th"></i></a>
+                                            <a href="#" class="text-danger mr-3"><i class="fas fa-print"></i></a>
+                                            <span class="mr-3">MES</span>
+                                            <span class="mr-3">SEMANA</span>
+                                            <span class="mr-3">AGENDA</span>
+                                        </p>
+                                        <form>
+                                    </div>
+                                    </form>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr class="table-encabezado text-center">
+                            <th>Domingo</th>
+                            <th>Lunes</th>
+                            <th>Martes</th>
+                            <th>Miercoles</th>
+                            <th>Jueves</th>
+                            <th>Viernes</th>
+                            <th>Sabado</th>
+                            </small>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="font-text-table">
+                            <td class="p-0">1</td>
+                            <td class="p-0">2</td>
+                            <td class="p-0">3</td>
+                            <td class="p-0">4</td>
+                            <td class="p-0">5</td>
+                            <td class="p-0">6</td>
+                            <td class="p-0">7</td>
+                        </tr>
+                        <tr class="tr-alto">
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                        </tr>
+                        <tr class="font-text-table">
+                            <td class="p-0">8</td>
+                            <td class="p-0">9</td>
+                            <td class="p-0">10</td>
+                            <td class="p-0">11</td>
+                            <td class="p-0">12</td>
+                            <td class="p-0">13</td>
+                            <td class="p-0">14</td>
+                        </tr>
+                        <tr class="tr-alto">
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                        </tr>
+                        <tr class="font-text-table">
+                            <td class="p-0">15</td>
+                            <td class="p-0">16</td>
+                            <td class="p-0">17</td>
+                            <td class="p-0">18</td>
+                            <td class="p-0">19</td>
+                            <td class="p-0">20</td>
+                            <td class="p-0">21</td>
+                        </tr>
+                        <tr class="tr-alto">
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                        </tr>
+                        <tr class="font-text-table">
+                            <td class="p-0">22</td>
+                            <td class="p-0">23</td>
+                            <td class="p-0">24</td>
+                            <td class="p-0">25</td>
+                            <td class="p-0">26</td>
+                            <td class="p-0">27</td>
+                            <td class="p-0">28</td>
+                        </tr>
+                        <tr class="tr-alto">
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                        </tr>
+                        <tr class="font-text-table">
+                            <td class="p-0">29</td>
+                            <td class="p-0">30</td class="p-0">
+                            <td class="p-0">31</td class="p-0">
+                            <td class="p-0"></td>
+                            <td class="p-0"></td>
+                            <td class="p-0"></td>
+                            <td class="p-0"></td>
+                        </tr>
+                        <tr class="tr-alto">
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                            <td class="td-border"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="row fondo-footer">
+            <div class="col-2">
+                <img src="https://pbs.twimg.com/profile_images/2261139415/Calcomania_finalUEcurvas50M_400x400.png" class="promo ml-5 p-2 mt-5">
+                <p class="text-white fuente-footer">CODIGO ABC - Todos los derechos reservados</p>
+            </div>
+
+            <div class="col-1">
+                <p class="text-white mt-3"><small>INFO</small></p>
+            </div>
+            <div class="col-1">
+                <small class="text-white">
+                <p class="mt-3">Home</p>
+                    <p>Discovery</p>
+                    <p>Photos</p>
+                    <p>Contact</p>
+                </small>
+            </div>
+            <div class="col-1">
+                <small class="text-white">
+                <p class="mt-3">About</p>
+                    <p>Help</p>
+                    <p>Terms</p>
+                    <p>Guidines</p>
+                </small>
+            </div>
+            <div class="col-1">
+                <small class="text-white">
+                <p class="mt-3">Testimonials</p>
+                    <p> Advertise</p>
+                    <p>Integrations</p>
+                    <p>Careers</p>
+                </small>
+            </div>
+            <div class="col-3">
+
+                <div class="input-group mt-5 bg-transparent">
+                    <input type="email" class="form-control bg-transparent" placeholder="Email">
+                    <div class="input-group-append bg-transparent">
+                        <button class="btn btn-outline-light " type="submit"> <i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </div>
+                <small><p class="text-white mt-3">Stay in touch with us for the freshest products!</p></small>
+            </div>
+            <div class="col-1 text-danger text-right">
+                <i class="fas fa-map-marker-alt mb-4 mt-3"></i><br>
+                <i class="far fa-envelope mb-4"></i><br>
+                <i class="fas fa-phone"></i><br>
+            </div>
+            <div class="col-2 text-danger">
+                <p class="fuente-footer mt-2">Nuestra Direccion <br>
+                    <span class="font-footer text-under"> Av. San Martin s/n</span>
+                </p>
+                <p class="fuente-footer">Tienes preguntas? <br>
+                    <span class="font-footer text-under">info@ds-santacruz.bo</span>
+                </p>
+                <p class="fuente-footer">Llamanos<br>
+                    <span class="font-footer text-under">+591 3 3329820</span>
+                </p>
+            </div>
+            </small>
+        </div>
+    </footer>
+</body>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+</html>
