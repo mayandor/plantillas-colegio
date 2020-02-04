@@ -32,6 +32,10 @@
         #mostrar:hover .mostrar {
             display: flex;
         }
+        
+        .toggle {
+            margin-left: 447px;
+        }
         /* estilos adversiting */
         
         .fondo {
@@ -156,45 +160,49 @@
                         <img src="https://pbs.twimg.com/profile_images/2261139415/Calcomania_finalUEcurvas50M_400x400.png" class="d-inline-block ml-4 p-1 promo navbar-brand"> SYSTEM COLLAGE
                     </a>
                 </div>
-                <ul class="navbar-nav ml-5 mr-5">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span class="texto-boton-navbar font-weight-bold">HOME</span><span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Nuestro Colegio</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Kinder Garden</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Primaria</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Secundaria</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Vida Escolar</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Guia de Padres</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" type="submit"><span class="texto-boton-navbar">Calendario</span></a>
-                    </li>
-                </ul>
-                <form class="form-inline">
-                    <section id="mostrar">
-                        <a href="#" class="mr-5">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a>
-                        <input type="search" class="mostrar">
-                    </section>
-                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><span>Iniciar Sesion</span></button>
-                </form>
+                <button class="navbar-toggler toggle" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ml-5 mr-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="texto-boton-navbar font-weight-bold">HOME</span><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Nuestro Colegio</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Kinder Garden</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Primaria</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Secundaria</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Vida Escolar</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Guia de Padres</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" type="submit"><span class="texto-boton-navbar">Calendario</span></a>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <section id="mostrar">
+                            <a href="#" class="mr-5">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <input type="search" class="mostrar">
+                        </section>
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><span>Iniciar Sesion</span></button>
+                    </form>
+                </div>
             </div>
         </nav>
     </div>
-
     <!-- CAROUSEL -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -243,7 +251,7 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col">
+            <div class="col col-md-1">
                 <img src="imagenes/flecha.png" class="w-100">
             </div>
         </div>
@@ -451,9 +459,9 @@
                 <small><p class="text-white mt-3">Stay in touch with us for the freshest products!</p></small>
             </div>
             <div class="col-1 text-danger text-right">
-                <i class="fas fa-map-marker-alt mb-4 mt-3"></i><br>
-                <i class="far fa-envelope mb-4"></i><br>
-                <i class="fas fa-phone"></i><br>
+                <i class="fas fa-map-marker-alt mb-4 mt-3 fa-lg"></i><br>
+                <i class="far fa-envelope mb-4 fa-lg"></i><br>
+                <i class="fas fa-phone fa-lg"></i><br>
             </div>
             <div class="col-2 text-danger">
                 <p class="fuente-footer mt-2">Nuestra Direccion <br>

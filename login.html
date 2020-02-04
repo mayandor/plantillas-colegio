@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .font-image {
+            margin-top: 100px;
+            margin-left: 180px;
+            margin-bottom: 307px;
+            border-radius: 150px;
+            width: 250px;
+            height: 250px;
+        }
+        
+        .fondito {
+            background: -webkit-linear-gradient(left top, red, blue);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom right, red, blue);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, red, blue);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, red, blue);
+            /* Standard syntax */
+            /* background: -webkit-linear-gradient( #141852, #4D56EF);
+            background: -moz-linear-gradient(#141852, #4D56EF);
+            background: -o-linear-gradient(#141852, #4D56EF); */
+        }
+        
+        .fondo {
+            /* background: linear-gradient(top, black, white) !important; */
+            background: -webkit-linear-gradient(left top, red, blue);
+            /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom right, red, blue);
+            /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, red, blue);
+            /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, red, blue);
+        }
+        
+        .font-logo {
+            width: 100px;
+            height: 100px;
+            margin-left: 280px;
+        }
+        
+        .fuente {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .form-center {
+            margin-left: 220px;
+        }
+        
+        .boton1 {
+            background-color: #1C4EA9;
+            border: none;
+        }
+        
+        .boton2 {
+            background-color: white;
+            border: 1px solid #1C4EA9;
+            color: #1C4EA9;
+        }
+        
+        .checkbox {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 fondo">
+                <img src="imagenes/4.png" class="font-image" alt="">
+            </div>
+            <div class="col-6">
+                <img src="https://pbs.twimg.com/profile_images/2261139415/Calcomania_finalUEcurvas50M_400x400.png" class="font-logo mt-5">
+                <h2 class="fuente text-center text-danger mt-5 font-weight-bold">COLEGIO XXX</h2>
+                <p class="text-primary text-center">Bienvenido!!! por favor introduzca su cuenta institucional</p>
+                <form class="form-center">
+                    <div class="form-group mt-5">
+                        <input type="text" class="w-50 form-control" placeholder="Username">
+                    </div>
+                    <div class="form-group mt-2">
+                        <input type="text" class="w-50 form-control" placeholder="Password">
+                    </div>
+                    <div class="form-check mt-4">
+                        <input type="checkbox" class="form-check-input form-check-inline checkbox" id="exampleCheck1">
+                        <label class="form-check-label text-danger" for="exampleCheck1">Remember me</label>
+                        <a href="#" class="text-danger ml-5">Forgot Password</a>
+                    </div>
+
+                    <div class="input-group-append mt-5">
+                        <button class="boton1 text-center text-warning font-weight-bold pl-5 pr-4 pt-2 pb-2" type="submit">Login</button>
+                        <button class="boton2 pl-4 pr-5 pt-2 pb-2" type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="fondito">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia optio magni recusandae accusamus eveniet dolores maxime aspernatur aut consectetur facere, voluptas itaque neque libero provident aliquid quas delectus nesciunt. Quidem!
+    </div>
+</body>
+
+</html>
